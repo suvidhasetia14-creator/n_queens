@@ -1,24 +1,23 @@
 # n_queens
-♟️ N-Queens Solver using Backtracking
-📌 Overview
+ N-Queens Solver using Backtracking
 
 The N-Queens Problem is a classic backtracking problem where the goal is to place N queens on an N × N chessboard such that no two queens attack each other.
 
 A queen can attack:
-Horizontally
-Vertically
-Diagonally
+-- Horizontally
+-- Vertically
+-- Diagonally
 
 The challenge is to place all queens safely.
 
-Features
+FEATURES:
 
 Works for any value of N
 Uses efficient backtracking
 Prints all possible solutions
 Easy-to-understand implementation
 
-Approach (Backtracking)
+APPROACH(BACKTRACKING):
 
 We solve the problem column by column:
 
@@ -36,7 +35,7 @@ Try next row
 If no position works:
 Backtrack
 
-Time & Space Complexity
+* TIME & SPACE COMPLEXITY:
 
 Time Complexity: O(N!) (approx)
 Space Complexity: O(N²)
