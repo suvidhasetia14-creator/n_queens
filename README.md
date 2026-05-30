@@ -1,41 +1,62 @@
-# n_queens
- N-Queens Solver using Backtracking
+# N-Queens Problem Solver
 
-The N-Queens Problem is a classic backtracking problem where the goal is to place N queens on an N × N chessboard such that no two queens attack each other.
+## Description
+The N-Queens Problem is a classic chess and computer science problem where the objective is to place *N queens* on an *N × N chessboard* such that no two queens attack each other.
 
-A queen can attack:
--- Horizontally
--- Vertically
--- Diagonally
+Since a queen can move horizontally, vertically, and diagonally, the challenge is to find a valid arrangement where every queen is safe from the others.
 
-The challenge is to place all queens safely.
+This project implements a solution using the *Backtracking Algorithm*, a recursive approach that efficiently explores possible queen placements and backtracks whenever a conflict occurs.
 
-FEATURES:
 
-Works for any value of N
-Uses efficient backtracking
-Prints all possible solutions
-Easy-to-understand implementation
+## Objectives
+- Solve the N-Queens problem for a given board size.
+- Demonstrate the use of recursion and backtracking.
+- Understand constraint satisfaction problems.
+- Improve problem-solving and algorithmic thinking skills.
 
-APPROACH(BACKTRACKING):
+## Technologies Used
+- Python 3.13
+- Backtracking Algorithm
+- Recursion
 
-We solve the problem column by column:
+## How the Algorithm Works
+1. Place a queen in the first row.
+2. Move to the next row and find a safe position.
+3. Continue placing queens row by row.
+4. If a row has no safe position, backtrack to the previous row and try a different position.
+5. Repeat until all queens are successfully placed.
 
-Start from column 0
-Try placing a queen in each row
-Check if the position is safe:
-No queen in same row (left side)
-No queen in upper diagonal
-No queen in lower diagonal
-If safe:
-Place queen
-Move to next column
-If not safe:
-Try next row
-If no position works:
-Backtrack
 
-* TIME & SPACE COMPLEXITY:
+## Example Output
 
-Time Complexity: O(N!) (approx)
-Space Complexity: O(N²)
+For N = 4:
+
+text
+. Q . .
+. . . Q
+Q . . .
+. . Q .
+
+
+Where:
+- Q = Queen
+- . = Empty space
+
+
+## Concepts Covered
+- Backtracking
+- Recursion
+- Constraint Satisfaction Problems
+- Matrix Representation
+- Algorithm Design
+
+
+## Author
+
+*Suvidha Setia*  
+B.Tech CSE (AI & ML) Student  
+Passionate about Programming, Problem Solving, and Software Development.
+
+## License
+
+This project is created for educational and learning purposes.
